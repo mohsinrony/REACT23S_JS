@@ -1,0 +1,5 @@
+body {
+    background-image: linear-gradient(rgb(97, 30, 30), rgb(12, 12, 123));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
