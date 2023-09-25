@@ -1,6 +1,6 @@
-const form = document.querySelector('form')
-const color1 = document.querySelector("#color1")
-const color2 = document.querySelector("#color2")
+const formInput = document.querySelector('form')
+const color1 = document.querySelector('#color1')
+const color2 = document.querySelector('#color2')
 const directions = document.querySelectorAll('input[name="direction"]')
 const answer = document.querySelector('.code')
 
@@ -8,7 +8,7 @@ const bgGenerator = () => {
 let selectedValue;
 
     for (const item of directions) {
-        if (item.checked){
+        if (item.checked) {
     selectedValue = item.value
 }
     }
@@ -18,4 +18,4 @@ let selectedValue;
 }
 
 
-form.addEventListener('change', bgGenerator)
+formInput.addEventListener('change', bgGenerator)

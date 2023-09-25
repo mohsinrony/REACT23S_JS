@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Pizza Order Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pizza Order Form</h1>
+      <form id="pizza-order-form">
+        <div class="form-group">
+          <label for="customer-name">Customer Name:</label>
+          <input
+            type="text"
+            id="customer-name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="pizza-size">Pizza Size:</label>
+          <div id="size-options">
+            <input
+              type="radio"
+              name="size"
+              id="size-2"
+              value="2"
+              data-price="7.50"
+              required
+            />
+            <label for="size-2">For two - 7.50€</label><br />
+            <input
+              type="radio"
+              name="size"
+              id="size-4"
+              value="4"
+              data-price="10.50"
+            />
+            <label for="size-4">For four- 10.50€</label><br />
+            <input
+              type="radio"
+              name="size"
+              id="size-6"
+              value="6"
+              data-price="12.50"
+            />
+            <label for="size-6">For six - 12.50€</label><br />
+            <input
+              type="radio"
+              name="size"
+              id="size-8"
+              value="8"
+              data-price="15.50"
+            />
+            <label for="size-8">For eight - 15.50€</label><br />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="toppings">Toppings (First 4 are free):</label><br />
+          <div id="toppings-options">
+            <input
+              type="checkbox"
+              name="toppings"
+              value="Chicken"
+              data-price="0.50"
+            />
+            <label for="topping-chicken">Chicken</label><br />
+            <input
+              type="checkbox"
+              name="toppings"
+              value="Pineapple"
+              data-price="0.50"
+            />
+            <label for="topping-pineapple">Pineapple</label><br />
+            <input
+              type="checkbox"
+              name="toppings"
+              value="BlueCheese"
+              data-price="0.50"
+            />
+            <label for="topping-bluecheese">Blue Cheese</label><br />
+            <input
+              type="checkbox"
+              name="toppings"
+              value="Mushroom"
+              data-price="0.50"
+            />
+            <label for="topping-mushroom">Mushroom</label><br />
+            <input
+              type="checkbox"
+              name="toppings"
+              value="Tunafish"
+              data-price="0.50"
+            />
+            <label for="topping-tunafish">Tunafish</label><br />
+            <input
+              type="checkbox"
+              name="toppings"
+              value="Blackpepper"
+              data-price="0.50"
+            />
+            <label for="topping-blackpepper">Black Pepper</label><br />
+            <input
+              type="checkbox"
+              name="toppings"
+              value="Redonions"
+              data-price="0.50"
+            />
+            <label for="topping-redonions">Red Onions</label><br />
+            <input
+              type="checkbox"
+              name="toppings"
+              value="Garlic"
+              data-price="0.50"
+            />
+            <label for="topping-garlic">Garlic</label><br />
+            <input
+              type="checkbox"
+              name="toppings"
+              value="Tomato"
+              data-price="0.50"
+            />
+            <label for="topping-tomato">Tomato</label><br />
+            <input
+              type="checkbox"
+              name="toppings"
+              value="extracheese"
+              data-price="0.50"
+            />
+            <label for="topping-extracheese">Extra Cheese</label><br />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="delivery">Delivery Options:</label>
+          <select id="delivery" name="delivery">
+            <option value="option" data-price="0.00">
+              Select an option from below
+            </option>
+            <option value="home" data-price="5.00">
+              Delivery home (+5.00€)
+            </option>
+            <option value="eat-in" data-price="0.00">Eat in</option>
+            <option value="pickup" data-price="0.00">Pickup food</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Total Cost:</label>
+          <span id="total-cost">0.00€</span>
+        </div>
+        <button type="submit">Place Order</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -103,9 +103,14 @@ if (input = 0) {}
 
 // 6.  Make a program that asks 25 numbers form the user. In the end program
 //     printsout average of the numbers.
-let num = Number(prompt("Please enter a number"));
-let average = 
-for (let num = 0; num<25;num++){console.log()}
+let num;
+let sum = 0;
+let count = 0;
+let average = sum / 25;
+for ( let count = 0; count < 25; sum += num) {let num = Number(prompt("Please enter a number"));
+ 
+}
+console.log("The average of the numbers input is "+ average);
 
 // 7.  Make a program that ask first one number from the user. After that the
 //     program asks: "Do you want to continue giving numbers?(y/n)". If user
@@ -132,6 +137,18 @@ for (let num=0;num<10;num++){console.log(big1); console.log(big2)};
 
 // 10. Make a program that asks ten numbers. Program calculates and prints out
 //     sum and average, also prints out the smallest and biggest number.
-let num = Number(prompt("Please enter 10 numbers"))
+/*let num = Number(prompt("Please enter 10 numbers"));
+let sum = 0;
+let average = sum / 5;
+for (num = 0; num<5;num++){console.log(sum + "and "+ average)}*/
 
-for (num = 0; num<10;num++){console.log()}
+
+// Love Calculator
+
+prompt("Enter a name");
+prompt("Your crus's name");
+
+ let loveScore = Math.random() * 100;
+ loveScore = Math.floor(loveScore) + 1;
+
+ console.log("Your love score is " + loveScore +"%");
